@@ -1,1 +1,1 @@
-# Mini-Web-Projects
+# miniWebProjects
