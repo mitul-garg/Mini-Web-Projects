@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-color: #151320;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    color: white;
+}
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#count {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.button-container {
+    padding: 10px;
+}
+.btn {
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-align: center;
+}
+.btn:hover {
+    color: #151320;
+    background-color: white;
+}
