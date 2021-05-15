@@ -7,8 +7,9 @@ nav {
     font-size: 1em;
     display: flex;
     justify-content: space-between;
-    background-color: coral;
+    background-color: #151320;
     font-family: 'Girassol', cursive;
+    color: antiquewhite;
 }
 nav ul {
     list-style-type: none;
@@ -22,11 +23,11 @@ li {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.2rem;
 }
 a:hover {
-    color: white;
+    color: antiquewhite;
 }
 .active {
     color: antiquewhite;
