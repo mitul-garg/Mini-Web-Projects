@@ -86,9 +86,11 @@ section {
     position: absolute;
     right: 60px;
     display: none;
+    background-color: white;
 }
 #dropdown-wrapper:hover #app-dropdown {
     display: block;
+    z-index: 1;
 }
 .app-item {
     display: inline-block;
