@@ -1,5 +1,6 @@
 const output = document.querySelector(".output");
 const body = document.body;
+const keys = document.querySelectorAll(".key");
 let input = "";
 
 body.addEventListener("keypress", function(e){
@@ -90,4 +91,76 @@ body.addEventListener("keydown", function(e){
             break;
         
     }
+})
+
+keys.forEach(function(btn){
+    btn.addEventListener("click",function(e){
+        let k = e.target.textContent;
+        switch(k) {
+            case "C":
+                input = "";
+                output.textContent = input;
+                break;
+            case "=":
+                output.textContent = eval(input);
+                input = output.textContent;
+                break;
+            case "*":
+                input += "*";
+                output.textContent = input;
+                break;
+            case "+":
+                input += "+";
+                output.textContent = input;
+                break;
+            case "-":
+                input += "-";
+                output.textContent = input;
+                break;
+            case "/":
+                input += "/";
+                output.textContent = input;
+                break;
+            case "0":
+                input += 0;
+                output.textContent = input;
+                break;
+            case "1":
+                input += 1;
+                output.textContent = input;
+                break;
+            case "2":
+                input += 2;
+                output.textContent = input;
+                break;
+            case "3":
+                input += 3;
+                output.textContent = input;
+                break;
+            case "4":
+                input += 4;
+                output.textContent = input;
+                break;
+            case "5":
+                input += 5;
+                output.textContent = input;
+                break;
+            case "6":
+                input += 6;
+                output.textContent = input;
+                break;
+            case "7":
+                input += 7;
+                output.textContent = input;
+                break;
+            case "8":
+                input += 8;
+                output.textContent = input;
+                break;
+            case "9":
+                input += 9;
+                output.textContent = input;
+                break;
+        }
+    })
 })
