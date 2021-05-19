@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+body {
+    background-color: #151320;
+}
+.container {
+    background-color: #1c1b29;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    display: grid;
+    grid-gap: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 0;
+    min-width: 0;
+}
+.key-container {
+    display: inline-grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+}
+.output {
+    font-size: 2rem;
+    padding: 20px 20px;
+    height: 80px;
+    overflow: auto;
+    min-width: 0;
+}
+.white-area-top {
+    background-color: white;
+}
+.white-area-mid {
+    background-color: white;
+}
