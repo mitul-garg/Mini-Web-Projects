@@ -79,6 +79,20 @@ header {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
 }
+#heart {
+    width: 50px;
+    animation-name: vibrate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes vibrate { 
+    0% {
+        width: 60px;
+    }
+    100% {
+        width: 50px;
+    }
+}
 
 @media screen and (max-width : 850px) {
     .details {

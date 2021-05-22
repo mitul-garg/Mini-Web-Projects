@@ -18,7 +18,8 @@ btns.forEach(function(btn){
             startTime();
         }
         if (classList.contains("heartrate")) {
-            document.querySelector(".time-watch").innerHTML = "78";
+            document.querySelector(".time-watch").innerHTML = "<img src='heart.png' id='heart'/><br>78";
+
             clearTimeout(t);
         }
     })
