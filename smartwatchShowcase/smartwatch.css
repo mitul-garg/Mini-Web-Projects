@@ -86,9 +86,20 @@ header {
     }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (min-width:400px) and (max-width:450px) {
     .time-watch {
-        left: 53%;
-        transform: translate(-50%,-50%);
+        left: 50%;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:399px) {
+    .time-watch {
+        left: 60%;
+    }
+}
+
+@media screen and (max-width : 349px) {
+    .time-watch {
+        left: 70%;
     }
 }

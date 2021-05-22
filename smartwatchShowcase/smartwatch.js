@@ -1,5 +1,5 @@
 const btns = document.querySelectorAll(".btn");
-const watch = document.getElementById("watch");
+const watch = document.querySelector(".watch");
 startTime();
 btns.forEach(function(btn){
     btn.addEventListener("click", function(e){
@@ -16,12 +16,10 @@ btns.forEach(function(btn){
             watch.src = "blue.png"
         if (classList.contains("time")) {
             startTime();
-            clearTimeout(h);
         }
         if (classList.contains("heartrate")) {
             document.querySelector(".time-watch").innerHTML = "78";
             clearTimeout(t);
-            heartRate();
         }
     })
 })
@@ -40,21 +38,4 @@ function startTime() {
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
-}
-var h;
-function heartRate() {
-    document.querySelector(".time-watch").innerHTML++;
-    h = setTimeout(heartRate, 1000);
-    if (document.querySelector(".time-watch").innerHTML == 85) {
-        clearTimeout(h);
-        decreaseRate();
-    }
-}
-function decreaseRate() {
-    document.querySelector(".time-watch").innerHTML--;
-    h = setTimeout(decreaseRate, 1000);
-    if (document.querySelector(".time-watch").innerHTML == 75) {
-        clearTimeout(h);
-        heartRate();
-    }
 }
