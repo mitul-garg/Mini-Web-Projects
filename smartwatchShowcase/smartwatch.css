@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    text-align: center;
+}
+#amazon {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2rem;
+    top: 5%;
+    z-index: -1;
+}
+.details {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 100px;
+}
+.watch-display {
+    position: relative;
+    text-align: center;
+}
+.watch {
+    width: 25rem;
+}
+.time-watch {
+    color:white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.btn {
+    padding: 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.red {
+    background-color: #ca3d22;
+}
+.pink {
+    background-color: #e9c7be;
+}
+.purple {
+    background-color: #8a5362;
+}
+.black {
+    background-color: #23211f;
+}
+.blue {
+    background-color: #565681;
+}
+.feature {
+    background-color: rgb(167, 163, 163);
+    color: black;
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+.buy {
+    background-color: rgb(223, 152, 22);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+@media screen and (max-width : 850px) {
+    .details {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .time-watch {
+        left: 53%;
+        transform: translate(-50%,-50%);
+    }
+}
