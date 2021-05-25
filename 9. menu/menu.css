@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    background-color: #151320;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+.menu {
+    font-size: 1.2rem;
+}
+.underline {
+    background-color: white;
+    border: solid 1px white;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-center {
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 90%;
+    display: grid;
+    gap: 2rem 3rem;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 40px;
+}
+.menu-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 20rem;
+}
+.photo {
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 4%;
+}
+.item-info > header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+}
+.item-text {
+    font-size: 0.75rem;
+    margin-top: 4px;
+}
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.filter-btn {
+    margin: 0 5px;
+    border: 2px solid white;
+    border-radius: 6%;
+    font-size: 0.8rem;
+}
+.filter-btn:hover {
+    background-color: white;
+    color: #151320;
+}
+
+@media screen and (min-width : 900px) {
+    .section-center {
+        position: absolute;
+        grid-template-columns: 400px 400px;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .photo {
+        width: 350px;
+        height: 200px;
+    }
+}
