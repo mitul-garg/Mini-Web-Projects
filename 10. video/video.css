@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.switch-btn {
+    background-color: transparent;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+}
+.switch-btn span {
+    display: inline-block;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background-color: white;
+    margin: 0;
+    transition: all 0.2s ease-in;
+}
+.slide .switch{
+    left: 50%;
+}
+.preloader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+}
+.hide-preloader {
+    visibility: hidden;
+    z-index: -999;
+}
