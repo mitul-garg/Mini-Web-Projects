@@ -2,6 +2,8 @@ const btn_button = document.querySelector(".switch-btn");
 const video_video = document.querySelector(".video-container");
 const preloader_div = document.querySelector(".preloader");
 
+video_video.play();
+
 btn_button.addEventListener("click", function() {
     if (!btn_button.classList.contains("slide")) {
         btn_button.classList.add("slide");
